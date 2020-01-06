@@ -1,0 +1,1 @@
+/usr/bin/clang++  -g   CMakeFiles/TMA4Question1.dir/src/TMA4Question1.cpp.o  -o TMA4Question1 

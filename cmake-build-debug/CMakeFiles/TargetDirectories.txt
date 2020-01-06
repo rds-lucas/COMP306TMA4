@@ -1,0 +1,3 @@
+/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/TMA4Question1.dir
+/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/edit_cache.dir
