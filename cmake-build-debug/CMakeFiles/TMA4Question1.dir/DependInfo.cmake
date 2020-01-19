@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/tommyvct/Documents/GitHub/COMP306TMA4/src/TMA4Question1.cpp" "/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/TMA4Question1.dir/src/TMA4Question1.cpp.o"
+  "C:/Users/ws103/Documents/GitHub/COMP306TMA4/src/TMA4Question1.cpp" "C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/TMA4Question1.dir/src/TMA4Question1.cpp.obj"
   )
-set(CMAKE_CXX_COMPILER_ID "Clang")
+set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

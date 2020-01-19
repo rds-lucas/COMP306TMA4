@@ -1,4 +1,4 @@
-/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++ -G "CodeBlocks - Unix Makefiles" /home/tommyvct/Documents/GitHub/COMP306TMA4
+"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" C:\Users\ws103\Documents\GitHub\COMP306TMA4
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug
+-- Build files have been written to: C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug

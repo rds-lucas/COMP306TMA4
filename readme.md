@@ -14,7 +14,7 @@ TMA4 requires you to write THREE C++ programs using the information you have stu
 
    4. In `main()`, create one instance each of the following: Circle (10, -5) with a radius of 23; Square (5, -5)(-10,7)(4,23)(-6,12); and Triangle(0,0)(10,10)(-15,15). Display the information from each object.
 
-2. Create an inheritance hierarchy of `Rodent`: `Mouse`, `Gerbil`, `Hamster`, etc. In the base class, provide methods that are common to all `Rodents`, and refine these in the derived classes to perform different behaviours depending on the specific type of `Rodent`. Rodent must be created as a pure abstract base class. Create an array of pointers (10) to `Rodent`, and fill it with different specific types of `Rodents`. Call your base class methods, and display the results.
+2. Create an inheritance hierarchy of `Rodent`: `Mouse`, `Gerbil`, `Hamster`, etc. In the base class, provide methods that are common to all `Rodent`, and refine these in the derived classes to perform different behaviours depending on the specific type of `Rodent`. Rodent must be created as a pure abstract base class. Create an array of pointers (10) to `Rodent`, and fill it with different specific types of `Rodent`. Call your base class methods, and display the results.
 
 3. Using the Standard C++ Library `vector` as an underlying implementation, create a `Set` template class that accepts only one of each type of object that you put into it. Make a nested `iterator` class that supports the “end sentinel” concept in Unit 16. Write test code for your `Set` in `main()`, using both your `Set` template class and the Standard C++ Library `set` template to verify that the behaviour is correct.
 

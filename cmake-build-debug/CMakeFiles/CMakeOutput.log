@@ -1,383 +1,97 @@
-The system is: Linux - 5.3.12-2-default - x86_64
+The system is: Windows - 10.0.18363 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/clang 
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.24.28314 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.24.28314.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
 
-The C compiler identification is Clang, found in "/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/clang++ 
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.24.28314/bin/Hostx86/x86/cl.exe 
 Build flags: 
 Id flags:  
 
 The output was:
 0
+Microsoft (R) C/C++ Optimizing Compiler Version 19.24.28314 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.24.28314.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
 
-The CXX compiler identification is Clang, found in "/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/3.15.3/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_56a5a/fast && /usr/bin/gmake -f CMakeFiles/cmTC_56a5a.dir/build.make CMakeFiles/cmTC_56a5a.dir/build
-gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_56a5a.dir/testCCompiler.c.o
-/usr/bin/clang    -o CMakeFiles/cmTC_56a5a.dir/testCCompiler.c.o   -c /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTC_56a5a
-/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_56a5a.dir/link.txt --verbose=1
-/usr/bin/clang      CMakeFiles/cmTC_56a5a.dir/testCCompiler.c.o  -o cmTC_56a5a 
-gmake[1]: Leaving directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):nmake /nologo cmTC_d3fd2\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_d3fd2.dir\build.make /nologo -L                  CMakeFiles\cmTC_d3fd2.dir\build
+Building C object CMakeFiles/cmTC_d3fd2.dir/testCCompiler.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ws103\AppData\Local\Temp\nmB5D0.tmp
+testCCompiler.c
+Linking C executable cmTC_d3fd2.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_d3fd2.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_d3fd2.dir\objects1.rsp @C:\Users\ws103\AppData\Local\Temp\nmB729.tmp
 
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_8f778/fast && /usr/bin/gmake -f CMakeFiles/cmTC_8f778.dir/build.make CMakeFiles/cmTC_8f778.dir/build
-gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o
-/usr/bin/clang   -v -o CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o   -c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c
-clang version 7.0.1 (tags/RELEASE_701/final 349238)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9
-Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Candidate multilib: .;@m64
-Selected multilib: .;@m64
- "/usr/bin/clang-7.0.1" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib64/clang/7.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib64/clang/7.0.1/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o -x c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c -faddrsig
-clang -cc1 version 7.0.1 based upon LLVM 7.0.1 default target x86_64-unknown-linux-gnu
-ignoring nonexistent directory "/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/local/include
- /usr/lib64/clang/7.0.1/include
- /usr/include
-End of search list.
-Linking C executable cmTC_8f778
-/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f778.dir/link.txt --verbose=1
-/usr/bin/clang     -v CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o  -o cmTC_8f778 
-clang version 7.0.1 (tags/RELEASE_701/final 349238)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9
-Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Candidate multilib: .;@m64
-Selected multilib: .;@m64
- "/usr/bin/ld" -z relro --hash-style=gnu --hash-style=both --build-id --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f778 /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64 -L/usr/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../.. -L/usr/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o
-gmake[1]: Leaving directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):nmake /nologo cmTC_2507e\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_2507e.dir\build.make /nologo -L                  CMakeFiles\cmTC_2507e.dir\build
+Building C object CMakeFiles/cmTC_2507e.dir/CMakeCCompilerABI.c.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ws103\AppData\Local\Temp\nmB9F6.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_2507e.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_2507e.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_2507e.dir\objects1.rsp @C:\Users\ws103\AppData\Local\Temp\nmBA55.tmp
 
-
-
-Parsed C implicit include dir info from above output: rv=done
-  found start of include info
-  found start of implicit include info
-    add: [/usr/local/include]
-    add: [/usr/lib64/clang/7.0.1/include]
-    add: [/usr/include]
-  end of search list found
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib64/clang/7.0.1/include] ==> [/usr/lib64/clang/7.0.1/include]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/local/include;/usr/lib64/clang/7.0.1/include;/usr/include]
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_8f778/fast && /usr/bin/gmake -f CMakeFiles/cmTC_8f778.dir/build.make CMakeFiles/cmTC_8f778.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/clang   -v -o CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o   -c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c]
-  ignore line: [clang version 7.0.1 (tags/RELEASE_701/final 349238)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /usr/bin]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Candidate multilib: .]
-  ignore line: [@m64]
-  ignore line: [Selected multilib: .]
-  ignore line: [@m64]
-  ignore line: [ "/usr/bin/clang-7.0.1" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib64/clang/7.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib64/clang/7.0.1/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o -x c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCCompilerABI.c -faddrsig]
-  ignore line: [clang -cc1 version 7.0.1 based upon LLVM 7.0.1 default target x86_64-unknown-linux-gnu]
-  ignore line: [ignoring nonexistent directory "/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib64/clang/7.0.1/include]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [Linking C executable cmTC_8f778]
-  ignore line: [/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f778.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/clang     -v CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o  -o cmTC_8f778 ]
-  ignore line: [clang version 7.0.1 (tags/RELEASE_701/final 349238)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /usr/bin]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Candidate multilib: .]
-  ignore line: [@m64]
-  ignore line: [Selected multilib: .]
-  ignore line: [@m64]
-  link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --hash-style=both --build-id --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_8f778 /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64 -L/usr/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../.. -L/usr/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o]
-    arg [/usr/bin/ld] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--hash-style=both] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--enable-new-dtags] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_8f778] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o] ==> ignore
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64]
-    arg [-L/usr/bin/../lib64] ==> dir [/usr/bin/../lib64]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..]
-    arg [-L/usr/bin/../lib] ==> dir [/usr/bin/../lib]
-    arg [-L/lib] ==> dir [/lib]
-    arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_8f778.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [-lc] ==> lib [c]
-    arg [-lgcc] ==> lib [gcc]
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--no-as-needed] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o] ==> ignore
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9] ==> [/usr/lib64/gcc/x86_64-suse-linux/9]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib] ==> [/usr/lib]
-  collapse library dir [/lib] ==> [/lib]
-  collapse library dir [/usr/lib] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib64/gcc/x86_64-suse-linux/9;/usr/lib64;/lib64;/usr/x86_64-suse-linux/lib;/usr/lib;/lib]
-  implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_d1169/fast && /usr/bin/gmake -f CMakeFiles/cmTC_d1169.dir/build.make CMakeFiles/cmTC_d1169.dir/build
-gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_d1169.dir/testCXXCompiler.cxx.o
-/usr/bin/clang++     -o CMakeFiles/cmTC_d1169.dir/testCXXCompiler.cxx.o -c /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTC_d1169
-/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1169.dir/link.txt --verbose=1
-/usr/bin/clang++       CMakeFiles/cmTC_d1169.dir/testCXXCompiler.cxx.o  -o cmTC_d1169 
-gmake[1]: Leaving directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):nmake /nologo cmTC_6ce6b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_6ce6b.dir\build.make /nologo -L                  CMakeFiles\cmTC_6ce6b.dir\build
+Building CXX object CMakeFiles/cmTC_6ce6b.dir/testCXXCompiler.cxx.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ws103\AppData\Local\Temp\nmBD23.tmp
+testCXXCompiler.cxx
+Linking CXX executable cmTC_6ce6b.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_6ce6b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_6ce6b.dir\objects1.rsp @C:\Users\ws103\AppData\Local\Temp\nmBD91.tmp
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_00726/fast && /usr/bin/gmake -f CMakeFiles/cmTC_00726.dir/build.make CMakeFiles/cmTC_00726.dir/build
-gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/clang++    -v -o CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp
-clang version 7.0.1 (tags/RELEASE_701/final 349238)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9
-Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Candidate multilib: .;@m64
-Selected multilib: .;@m64
- "/usr/bin/clang-7.0.1" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib64/clang/7.0.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9 -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib64/clang/7.0.1/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -faddrsig
-clang -cc1 version 7.0.1 based upon LLVM 7.0.1 default target x86_64-unknown-linux-gnu
-ignoring nonexistent directory "/include"
-#include "..." search starts here:
-#include <...> search starts here:
- /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9
- /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux
- /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward
- /usr/local/include
- /usr/lib64/clang/7.0.1/include
- /usr/include
-End of search list.
-Linking CXX executable cmTC_00726
-/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00726.dir/link.txt --verbose=1
-/usr/bin/clang++      -v CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_00726 
-clang version 7.0.1 (tags/RELEASE_701/final 349238)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/bin
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7
-Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9
-Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9
-Candidate multilib: .;@m64
-Selected multilib: .;@m64
- "/usr/bin/ld" -z relro --hash-style=gnu --hash-style=both --build-id --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00726 /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64 -L/usr/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../.. -L/usr/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o
-gmake[1]: Leaving directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Run Build Command(s):nmake /nologo cmTC_ae0df\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\bin\HostX86\x86\nmake.exe" -f CMakeFiles\cmTC_ae0df.dir\build.make /nologo -L                  CMakeFiles\cmTC_ae0df.dir\build
+Building CXX object CMakeFiles/cmTC_ae0df.dir/CMakeCXXCompilerABI.cpp.obj
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\cl.exe @C:\Users\ws103\AppData\Local\Temp\nmBFD2.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_ae0df.exe
+	"C:\Program Files\JetBrains\CLion 2019.3.2\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_ae0df.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1424~1.283\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_ae0df.dir\objects1.rsp @C:\Users\ws103\AppData\Local\Temp\nmC041.tmp
 
-
-
-Parsed CXX implicit include dir info from above output: rv=done
-  found start of include info
-  found start of implicit include info
-    add: [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9]
-    add: [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux]
-    add: [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward]
-    add: [/usr/local/include]
-    add: [/usr/lib64/clang/7.0.1/include]
-    add: [/usr/include]
-  end of search list found
-  collapse include dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9] ==> [/usr/include/c++/9]
-  collapse include dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux] ==> [/usr/include/c++/9/x86_64-suse-linux]
-  collapse include dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward] ==> [/usr/include/c++/9/backward]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib64/clang/7.0.1/include] ==> [/usr/lib64/clang/7.0.1/include]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/9;/usr/include/c++/9/x86_64-suse-linux;/usr/include/c++/9/backward;/usr/local/include;/usr/lib64/clang/7.0.1/include;/usr/include]
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/gmake cmTC_00726/fast && /usr/bin/gmake -f CMakeFiles/cmTC_00726.dir/build.make CMakeFiles/cmTC_00726.dir/build]
-  ignore line: [gmake[1]: Entering directory '/home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/clang++    -v -o CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -c /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [clang version 7.0.1 (tags/RELEASE_701/final 349238)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /usr/bin]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Candidate multilib: .]
-  ignore line: [@m64]
-  ignore line: [Selected multilib: .]
-  ignore line: [@m64]
-  ignore line: [ "/usr/bin/clang-7.0.1" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib64/clang/7.0.1 -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9 -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux -internal-isystem /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib64/clang/7.0.1/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/tommyvct/Documents/GitHub/COMP306TMA4/cmake-build-debug/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -x c++ /snap/clion/97/bin/cmake/linux/share/cmake-3.15/Modules/CMakeCXXCompilerABI.cpp -faddrsig]
-  ignore line: [clang -cc1 version 7.0.1 based upon LLVM 7.0.1 default target x86_64-unknown-linux-gnu]
-  ignore line: [ignoring nonexistent directory "/include"]
-  ignore line: [#include "..." search starts here:]
-  ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9]
-  ignore line: [ /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/x86_64-suse-linux]
-  ignore line: [ /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../include/c++/9/backward]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib64/clang/7.0.1/include]
-  ignore line: [ /usr/include]
-  ignore line: [End of search list.]
-  ignore line: [Linking CXX executable cmTC_00726]
-  ignore line: [/snap/clion/97/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_00726.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/clang++      -v CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o  -o cmTC_00726 ]
-  ignore line: [clang version 7.0.1 (tags/RELEASE_701/final 349238)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /usr/bin]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/7]
-  ignore line: [Found candidate GCC installation: /usr/lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-  ignore line: [Candidate multilib: .]
-  ignore line: [@m64]
-  ignore line: [Selected multilib: .]
-  ignore line: [@m64]
-  link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --hash-style=both --build-id --enable-new-dtags --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_00726 /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64 -L/usr/bin/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib -L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../.. -L/usr/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o /usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o]
-    arg [/usr/bin/ld] ==> ignore
-    arg [-zrelro] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--hash-style=both] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--enable-new-dtags] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTC_00726] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crt1.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crti.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtbegin.o] ==> ignore
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64]
-    arg [-L/usr/bin/../lib64] ==> dir [/usr/bin/../lib64]
-    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
-    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib]
-    arg [-L/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..] ==> dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..]
-    arg [-L/usr/bin/../lib] ==> dir [/usr/bin/../lib]
-    arg [-L/lib] ==> dir [/lib]
-    arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_00726.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [-lgcc] ==> lib [gcc]
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/crtend.o] ==> ignore
-    arg [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64/crtn.o] ==> ignore
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9] ==> [/usr/lib64/gcc/x86_64-suse-linux/9]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib64] ==> [/usr/lib64]
-  collapse library dir [/lib/../lib64] ==> [/lib64]
-  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../../../x86_64-suse-linux/lib] ==> [/usr/x86_64-suse-linux/lib]
-  collapse library dir [/usr/bin/../lib64/gcc/x86_64-suse-linux/9/../../..] ==> [/usr/lib64]
-  collapse library dir [/usr/bin/../lib] ==> [/usr/lib]
-  collapse library dir [/lib] ==> [/lib]
-  collapse library dir [/usr/lib] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib64/gcc/x86_64-suse-linux/9;/usr/lib64;/lib64;/usr/x86_64-suse-linux/lib;/usr/lib;/lib]
-  implicit fwks: []
 
 

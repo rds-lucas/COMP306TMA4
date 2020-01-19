@@ -1,1 +1,0 @@
-/usr/bin/clang++  -g   CMakeFiles/COMP306TMA4.dir/src/TMA4Question1.cpp.o  -o COMP306TMA4 
