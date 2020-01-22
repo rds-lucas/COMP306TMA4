@@ -56,12 +56,14 @@ CMAKE_BINARY_DIR = C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles\TMA4Question1.dir\all
 all: CMakeFiles\TMA4Question2.dir\all
+all: CMakeFiles\TMA4Question3.dir\all
 
 .PHONY : all
 
 # The main recursive "clean" target.
 clean: CMakeFiles\TMA4Question1.dir\clean
 clean: CMakeFiles\TMA4Question2.dir\clean
+clean: CMakeFiles\TMA4Question3.dir\clean
 
 .PHONY : clean
 
@@ -123,6 +125,33 @@ TMA4Question2: CMakeFiles\TMA4Question2.dir\rule
 CMakeFiles\TMA4Question2.dir\clean:
 	$(MAKE) -f CMakeFiles\TMA4Question2.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question2.dir\clean
 .PHONY : CMakeFiles\TMA4Question2.dir\clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/TMA4Question3.dir
+
+# All Build rule for target.
+CMakeFiles\TMA4Question3.dir\all:
+	$(MAKE) -f CMakeFiles\TMA4Question3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\depend
+	$(MAKE) -f CMakeFiles\TMA4Question3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\CMakeFiles --progress-num=5,6 "Built target TMA4Question3"
+.PHONY : CMakeFiles\TMA4Question3.dir\all
+
+# Build rule for subdir invocation for target.
+CMakeFiles\TMA4Question3.dir\rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles\TMA4Question3.dir\rule
+
+# Convenience name for target.
+TMA4Question3: CMakeFiles\TMA4Question3.dir\rule
+
+.PHONY : TMA4Question3
+
+# clean rule for target.
+CMakeFiles\TMA4Question3.dir\clean:
+	$(MAKE) -f CMakeFiles\TMA4Question3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\clean
+.PHONY : CMakeFiles\TMA4Question3.dir\clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
