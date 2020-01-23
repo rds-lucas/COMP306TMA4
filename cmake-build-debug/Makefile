@@ -150,6 +150,19 @@ TMA4Question3\fast:
 	$(MAKE) -f CMakeFiles\TMA4Question3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\build
 .PHONY : TMA4Question3\fast
 
+#=============================================================================
+# Target rules for targets named TMA4Question3_1
+
+# Build rule for target.
+TMA4Question3_1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) TMA4Question3_1
+.PHONY : TMA4Question3_1
+
+# fast build rule for target.
+TMA4Question3_1\fast:
+	$(MAKE) -f CMakeFiles\TMA4Question3_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3_1.dir\build
+.PHONY : TMA4Question3_1\fast
+
 src\TMA4Question1.obj: src\TMA4Question1.cpp.obj
 
 .PHONY : src\TMA4Question1.obj
@@ -231,6 +244,33 @@ src\TMA4Question3.cpp.s:
 	$(MAKE) -f CMakeFiles\TMA4Question3.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3.dir\src\TMA4Question3.cpp.s
 .PHONY : src\TMA4Question3.cpp.s
 
+src\TMA4Question3_1.obj: src\TMA4Question3_1.cpp.obj
+
+.PHONY : src\TMA4Question3_1.obj
+
+# target to build an object file
+src\TMA4Question3_1.cpp.obj:
+	$(MAKE) -f CMakeFiles\TMA4Question3_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3_1.dir\src\TMA4Question3_1.cpp.obj
+.PHONY : src\TMA4Question3_1.cpp.obj
+
+src\TMA4Question3_1.i: src\TMA4Question3_1.cpp.i
+
+.PHONY : src\TMA4Question3_1.i
+
+# target to preprocess a source file
+src\TMA4Question3_1.cpp.i:
+	$(MAKE) -f CMakeFiles\TMA4Question3_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3_1.dir\src\TMA4Question3_1.cpp.i
+.PHONY : src\TMA4Question3_1.cpp.i
+
+src\TMA4Question3_1.s: src\TMA4Question3_1.cpp.s
+
+.PHONY : src\TMA4Question3_1.s
+
+# target to generate assembly for a file
+src\TMA4Question3_1.cpp.s:
+	$(MAKE) -f CMakeFiles\TMA4Question3_1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TMA4Question3_1.dir\src\TMA4Question3_1.cpp.s
+.PHONY : src\TMA4Question3_1.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -241,6 +281,7 @@ help:
 	@echo ... TMA4Question2
 	@echo ... edit_cache
 	@echo ... TMA4Question3
+	@echo ... TMA4Question3_1
 	@echo ... rebuild_cache
 	@echo ... src/TMA4Question1.obj
 	@echo ... src/TMA4Question1.i
@@ -251,6 +292,9 @@ help:
 	@echo ... src/TMA4Question3.obj
 	@echo ... src/TMA4Question3.i
 	@echo ... src/TMA4Question3.s
+	@echo ... src/TMA4Question3_1.obj
+	@echo ... src/TMA4Question3_1.i
+	@echo ... src/TMA4Question3_1.s
 .PHONY : help
 
 

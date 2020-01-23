@@ -1,3 +1,76 @@
+//: TMA4Question2.cpp
+
+/**
+ * Title: TMA4Question2.cpp
+ * Description:
+ *       An inheritance hierarchy of Rodents.
+ * Date: January 20, 2020 
+ * Author: Tommy Wu
+ */
+
+/**
+ * DOCUMENTATION
+ *
+ * Program Purpose:
+ *      1. Create 10 Rodents of either Mouse, Gerbil, Hamster type
+ *      2. Call the overloaded functions
+ *
+ * Compile: clang++ TMA4Question2.cpp -o TMA4Question2
+ * Execution : ./TMA4Question2
+ */
+
+/**
+ * No test available for a fully static program.
+ * 
+ * The program should generate following output from stdout:
+ * Created Mouse with name M0!
+ * Created Gerbil with name G1!
+ * Created Hamster with name H2!
+ * Created Mouse with name M3!
+ * Created Gerbil with name G4!
+ * Created Hamster with name H5!
+ * Created Mouse with name M6!
+ * Created Gerbil with name G7!
+ * Created Hamster with name H8!
+ * Created Gerbil with name G9!
+ * 
+ * 
+ * 
+ * Hi! I'm Mouse M0!
+ * Mouse M0 eat!
+ * Hi! I'm Gerbil G1!
+ * Gerbil G1 eat!
+ * Hi! I'm Hamster H2!
+ * Hamster H2 eat!
+ * Hi! I'm Mouse M3!
+ * Mouse M3 eat!
+ * Hi! I'm Gerbil G4!
+ * Gerbil G4 eat!
+ * Hi! I'm Hamster H5!
+ * Hamster H5 eat!
+ * Hi! I'm Mouse M6!
+ * Mouse M6 eat!
+ * Hi! I'm Gerbil G7!
+ * Gerbil G7 eat!
+ * Hi! I'm Hamster H8!
+ * Hamster H8 eat!
+ * Hi! I'm Gerbil G9!
+ * Gerbil G9 eat!
+ * 
+ * 
+ * 
+ * Destroyed Mouse with name M0!
+ * Destroyed Gerbil with name G1!
+ * Destroyed Hamster with name H2!
+ * Destroyed Mouse with name M3!
+ * Destroyed Gerbil with name G4!
+ * Destroyed Hamster with name H5!
+ * Destroyed Mouse with name M6!
+ * Destroyed Gerbil with name G7!
+ * Destroyed Hamster with name H8!
+ * Destroyed Gerbil with name G9!
+ */
+
 #include <iostream>
 #include <string>
 
@@ -148,4 +221,4 @@ int main()
 	}
 
 	return 0;
-}
+} ///:~

@@ -36,7 +36,8 @@ public:
             std::cout << "not a duplicate" << toInsert << std::endl;
 
             v->push_back(toInsert);      // push back to vector
-            std::sort(v->begin(), v->end(), toInsert);   // sort it
+            // Note that the third parameter represents the collation, and the function pointer is passed in
+            std::sort(v->begin(), v->end());   // sort it
             search = std::find(v->begin(), v->end(), toInsert);   // obtain the new location
         }
             // else (duplicate) return the iterator to the duplicated object
@@ -115,12 +116,12 @@ public:
 
         //for (auto i : *v)
 
-        for (iterator i = this->begin(); i != this->end(); ++i)
+        for (iterator i = this->begin(); i != this->end(); i++)
         {
             std::cout << "{" << i;
             if (i != end())
             {
-                std::cout << "}, ";
+                std::cout << "}, "; // TODO: output
             }
         }
 
@@ -134,10 +135,12 @@ public:
         Set& s;
         int index;
 
+
     public:
         explicit iterator(Set& is)
             : s(is), index(0)
-        { }
+        {
+        }
 
         /// return end element
         iterator(Set& is, bool)
@@ -145,8 +148,13 @@ public:
         {
         }
 
-        iterator(Set& is, int iindex)
-            : s(is), index(iindex)
+        iterator(Set& is, int index)
+            : s(is), index(index)
+        {
+        }
+
+        iterator(const iterator& toCopy)
+            : s(toCopy.s), index(toCopy.index)
         {
         }
 
@@ -168,24 +176,30 @@ public:
             return *this;
         }
 
-        int operator++()   // prefix
+        iterator& operator++()   // prefix
         {
-            return s.v->at(++index);
+            this->index++;
+            return *this;
         }
 
-        int operator++(int)  //postfix
+        iterator operator++(int)  //postfix
         {
-            return s.v->at(index++);
+            iterator ret(*this);
+            ++(*this);
+            return ret;
         }
 
-        int operator--()   // prefix
+        iterator& operator--()   // prefix
         {
-            return s.v->at(--index);
+            this->index--;
+            return *this;
         }
 
-        int operator--(int)  //postfix
+        iterator operator--(int)  //postfix
         {
-            return s.v->at(index--);
+            iterator ret(*this);
+            --(*this);
+            return ret;
         }
 
         iterator& operator+=(int amount)
@@ -306,6 +320,11 @@ public:
         return Integer(lvalue / rvalue.payload);
     }
 
+    bool operator==(const Integer& rv) const
+    {
+        return payload == rv.payload;
+    }
+
 
     // const DoStuff& operator++ (DoStuff& a) is invalid in c++11!!!!
     // prefix overloaded operater++ function takes no parameters
@@ -351,23 +370,27 @@ int main()
 {
 
 
-    //Integer i1 = Integer(4);
-    //Set<Integer> s = Set<Integer>();
-    //s.insert(i1);
-    Set<int> s = Set<int>();
-    s.insert(4);
-    s.insert(-951);
-    s.insert(-297);
-    s.insert(122);
-    s.insert(599);
-    s.insert(-120);
-    s.insert(-774);
-    s.insert(-738);
-    s.insert(103);
-    s.insert(260);
-    s.insert(755);
+    Integer i1 = Integer(4);
+    Set<Integer> s = Set<Integer>();
+    s.insert(i1);
+    s.insert(i1);
 
     s.printSet();
+
+    //Set<int> s = Set<int>();
+    //s.insert(4);
+    //s.insert(-951);
+    //s.insert(-297);
+    //s.insert(122);
+    //s.insert(599);
+    //s.insert(-120);
+    //s.insert(-774);
+    //s.insert(-738);
+    //s.insert(103);
+    //s.insert(260);
+    //s.insert(755);
+
+    //s.printSet();
 
     //Set<double> ss = Set<double>();
     //ss.insert(4.0);
@@ -382,7 +405,17 @@ int main()
     //ss.insert(26.0);
     //ss.insert(755.0);
 
-    //s.printSet();
+    //ss.printSet();
 
 
-}
+    //Set<std::string> sss = Set<std::string>();
+
+    //sss.insert("fuck");
+    //sss.insert("it");
+    //sss.insert("fuck");
+    //sss.insert("c++");
+    //sss.insert("template!");
+
+    //sss.printSet();
+
+} ///:~

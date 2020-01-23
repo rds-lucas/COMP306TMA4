@@ -1,6 +1,70 @@
-//
-// Created by tommyvct on 06/01/2020.
-//
+//: TMA4Question1.cpp
+
+/**
+ * Title: TMA4Question1.cpp
+ * Description:
+ *      A class hierarchy for simple geometry.
+ * Date: January 20, 2020 
+ * Author: Tommy Wu
+ */
+
+/**
+ * DOCUMENTATION
+ *
+ * Program Purpose:
+ *      1. Create 2 Point objects
+ *      2. Create Circle, Triangle, Square objects
+ *      3. Print their area, circunferenfce and coordinates of bounding box.
+ *
+ * Compile: clang++ TMA4Question1.cpp -o TMA4Question1
+ * Execution : ./TMA4Question1
+ */
+
+/**
+ * This program includes following test:
+ *  1. Create and print Point (8, 12) and Point (-2, -2)
+ *  2. Create and print a Circle with centre (10, -5), radius 23, area, circunferenfce and coordinates of bounding box
+ *  3. Create and print a Triangle with Point (0, 0), (10, 10), (-15, 15), it's area, circunferenfce and coordinates of bounding box
+ *  4. Create and print a Square with Point (5, -5), (-10, 7), (4, 23), (-6, 12), it's area, circunferenfce and coordinates of bounding box
+ *  5. Create and print a Square with Point (5, 5), (-5, 5), (-5, -5), (5, -5), it's area, circunferenfce and coordinates of bounding box
+ *
+ * The program should generate following output from stdout:
+ *	Point (8, 12)
+ *  Point (-2, -2)
+ *
+ *  Circle
+ *  centre = (10, -5)
+ *  radius = 23
+ *  area = 1661.9025
+ *  circumference = 144.5133
+ *  boundingBox = (-13, 33), (-13, -13), (33, -13), (33, 33)
+ *
+ *  Triangle
+ *  p1 = (0, 0)
+ *  p2 = (10, 10)
+ *  p3 = (-15, 15)
+ *  area = 187.5000
+ *  circumference = 60.8504
+ *  boundingBox = (-15, 15), (-15, 0), (10, 0), (10, 15)
+ *
+ *  Square
+ *  p1 = (5, -5)
+ *  p2 = (-10, 7)
+ *  p3 = (4, 23)
+ *  p4 = (-6, 12)
+ *  area = 58.5000
+ *  circumference = 75.5842
+ *  boundingBox = (-10, 23), (-10, -5), (5, -5), (5, 23)
+ *
+ *  Square
+ *  p1 = (5, 5)
+ *  p2 = (-5, 5)
+ *  p3 = (-5, -5)
+ *  p4 = (5, -5)
+ *  area = 100.0000
+ *  circumference = 40.0000
+ *  boundingBox = (-5, 5), (-5, -5), (5, -5), (5, 5)
+ */
 
 #include <iostream>
 #include <string>
@@ -88,7 +152,6 @@ class Point
         int deltaHeight = std::abs(a.y - this->y);
         return std::sqrt(std::pow(deltaLength, 2) + std::pow(deltaHeight, 2));
     }
-
 };
 
 class Shape
@@ -118,7 +181,6 @@ class Shape
     virtual std::vector<Point>& boundingBox() = 0;
 
     virtual void display() = 0;
-
 };
 
 class Circle : public Shape
@@ -136,12 +198,12 @@ class Circle : public Shape
         centre(centreX, centreY),
         radius(newRadius),
         Shape
-            (
-                Point(centreX - newRadius, centreX + newRadius),
-                Point(centreX - newRadius, centreX - newRadius),
-                Point(centreX + newRadius, centreX - newRadius),
-                Point(centreX + newRadius, centreX + newRadius)
-            )
+        (
+            Point(centreX - newRadius, centreX + newRadius),
+            Point(centreX - newRadius, centreX - newRadius),
+            Point(centreX + newRadius, centreX - newRadius),
+            Point(centreX + newRadius, centreX + newRadius)
+        )
     {
     }
     //    Circle(const Circle& copy) : centre(copy.centre), radius(copy.radius) {}
@@ -198,12 +260,12 @@ class Triangle : public Shape
         p2(p2X, p2Y),
         p3(p3X, p3Y),
         Shape
-            (
-                Point(minimum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y)),
-                Point(minimum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
-                Point(maximum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
-                Point(maximum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y))
-            )
+        (
+            Point(minimum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y)),
+            Point(minimum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
+            Point(maximum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
+            Point(maximum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y))
+        )
     {
     }
 
@@ -245,8 +307,6 @@ class Triangle : public Shape
     }
 };
 
-
-
 class Square : public Shape
 {
  private:
@@ -269,12 +329,12 @@ class Square : public Shape
         p3(p3X, p3Y),
         p4(p4X, p4Y),
         Shape
-            (
-                Point(minimum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y)),
-                Point(minimum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
-                Point(maximum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
-                Point(maximum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y))
-            )
+        (
+            Point(minimum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y)),
+            Point(minimum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
+            Point(maximum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
+            Point(maximum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y))
+        )
     {
     }
 
@@ -340,8 +400,10 @@ int main()
     c = a + b;
     d = a - b;
 
-    std::cout << c << std::endl;
-    std::cout << d << std::endl;
+    std::cout << "Point " << c << std::endl;
+    std::cout << "Point " << d << std::endl;
+
+    std::cout << std::endl;
 
     Circle cc = Circle(10, -5, 23);
     cc.display();
@@ -356,6 +418,8 @@ int main()
     Square ss = Square(5, -5, -10, 7, 4, 23, -6, 12);
     ss.display();
 
+    std::cout << std::endl;
+
     Square sss = Square(5, 5, -5, 5, -5, -5, 5, -5);
     sss.display();
-}
+} ///:~

@@ -159,6 +159,50 @@
 					<DistClean command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="TMA4Question3_1">
+				<Option output="C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/TMA4Question3_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 TMA4Question3_1"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TMA4Question3_1/fast">
+				<Option output="C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug/TMA4Question3_1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.24.28314\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 TMA4Question3_1/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\ws103\Documents\GitHub\COMP306TMA4\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="C:/Users/ws103/Documents/GitHub/COMP306TMA4/cmake-build-debug"/>
 				<Option type="4"/>
@@ -178,6 +222,9 @@
 		</Unit>
 		<Unit filename="C:/Users/ws103/Documents/GitHub/COMP306TMA4/src/TMA4Question3.cpp">
 			<Option target="TMA4Question3"/>
+		</Unit>
+		<Unit filename="C:/Users/ws103/Documents/GitHub/COMP306TMA4/src/TMA4Question3_1.cpp">
+			<Option target="TMA4Question3_1"/>
 		</Unit>
 		<Unit filename="C:/Users/ws103/Documents/GitHub/COMP306TMA4/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
