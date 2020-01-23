@@ -28,7 +28,7 @@ public:
     iterator insert(const T& toInsert)
     {
         auto search = std::find(v->begin(), v->end(), toInsert);   // search for duplicate
-        int index = std::distance(v->begin(), search);   // get index for search
+//        int index = std::distance(v->begin(), search);   // get index for search
 
 
         if (search == v->end())  // if not a duplicate
@@ -36,8 +36,7 @@ public:
             std::cout << "not a duplicate" << toInsert << std::endl;
 
             v->push_back(toInsert);      // push back to vector
-            // Note that the third parameter represents the collation, and the function pointer is passed in
-            std::sort(v->begin(), v->end());   // sort it
+//            std::sort(v->begin(), v->end());   // sort it
             search = std::find(v->begin(), v->end(), toInsert);   // obtain the new location
         }
             // else (duplicate) return the iterator to the duplicated object
@@ -45,7 +44,7 @@ public:
         {
             std::cout << "duplicate" << std::endl;
         }
-        index = std::distance(v->begin(), search);
+        int index = std::distance(v->begin(), search);
         return iterator(*this, index);
     }
 
@@ -76,7 +75,7 @@ public:
 
         if (search != v->end())  // if found
         {
-            v.erase(search);
+            v->erase(search);
             return 1;
         }
         else  // if not found
@@ -91,12 +90,13 @@ public:
 
         if (search != v->end())  // if found return next iterator
         {
-            search = v->erase(toErase);
-            return iterator(this, std::distance(v->begin(), search));
+            search = v->erase(search);
+            int index = std::distance(v->begin(), search);
+            return iterator(*this, index);
         }
         else  // if not found return end iterator
         {
-            return iterator(this, false);
+            return iterator(*this, true);
         }
     }
 
@@ -368,54 +368,54 @@ public:
 
 int main()
 {
-
-
     Integer i1 = Integer(4);
     Set<Integer> s = Set<Integer>();
     s.insert(i1);
     s.insert(i1);
+    s.erase(i1);
+    s.erase(i1);
 
     s.printSet();
 
-    //Set<int> s = Set<int>();
-    //s.insert(4);
-    //s.insert(-951);
-    //s.insert(-297);
-    //s.insert(122);
-    //s.insert(599);
-    //s.insert(-120);
-    //s.insert(-774);
-    //s.insert(-738);
-    //s.insert(103);
-    //s.insert(260);
-    //s.insert(755);
+//    Set<int> s = Set<int>();
+//    s.insert(4);
+//    s.insert(-951);
+//    s.insert(-297);
+//    s.insert(122);
+//    s.insert(599);
+//    s.insert(-120);
+//    s.insert(-774);
+//    s.insert(-738);
+//    s.insert(103);
+//    s.insert(260);
+//    s.insert(755);
+//
+//    s.printSet();
 
-    //s.printSet();
-
-    //Set<double> ss = Set<double>();
-    //ss.insert(4.0);
-    //ss.insert(-95.1);
-    //ss.insert(-29.7);
-    //ss.insert(12.2);
-    //ss.insert(59.9);
-    //ss.insert(-1.20);
-    //ss.insert(-7.74);
-    //ss.insert(-73.8);
-    //ss.insert(10.3);
-    //ss.insert(26.0);
-    //ss.insert(755.0);
-
-    //ss.printSet();
+//    Set<double> ss = Set<double>();
+//    ss.insert(4.0);
+//    ss.insert(-95.1);
+//    ss.insert(-29.7);
+//    ss.insert(12.2);
+//    ss.insert(59.9);
+//    ss.insert(-1.20);
+//    ss.insert(-7.74);
+//    ss.insert(-73.8);
+//    ss.insert(10.3);
+//    ss.insert(26.0);
+//    ss.insert(755.0);
+//
+//    ss.printSet();
 
 
-    //Set<std::string> sss = Set<std::string>();
-
-    //sss.insert("fuck");
-    //sss.insert("it");
-    //sss.insert("fuck");
-    //sss.insert("c++");
-    //sss.insert("template!");
-
-    //sss.printSet();
+//    Set<std::string> sss = Set<std::string>();
+//
+//    sss.insert("fuck");
+//    sss.insert("it");
+//    sss.insert("fuck");
+//    sss.insert("c++");
+//    sss.insert("template!");
+//
+//    sss.printSet();
 
 } ///:~
