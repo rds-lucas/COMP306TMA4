@@ -8,20 +8,18 @@ template<typename T>
 class Set
 {
 private:
-    std::vector<T*> v;
+    std::vector<T>* v;
 
 
 public:
-    Set() = default;
+    Set()
+    {
+        v = new std::vector<T>();
+    }
 
     ~Set()
     {
-        for (int i = 0; i < v.size(); ++i)
-        {
-            delete v[i];
-        }
-
-        v.clear();
+        delete v;
     }
     class iterator;
     friend class iterator;
