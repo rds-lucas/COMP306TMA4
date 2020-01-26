@@ -190,20 +190,20 @@ class Circle : public Shape
     int radius;
 
  public:
-    Circle() : centre(0, 0), radius(0), Shape()
+    Circle() : Shape(), centre(0, 0), radius(0)
     {
     }
 
     Circle(int centreX, int centreY, int newRadius) :
-        centre(centreX, centreY),
-        radius(newRadius),
         Shape
         (
             Point(centreX - newRadius, centreX + newRadius),
             Point(centreX - newRadius, centreX - newRadius),
             Point(centreX + newRadius, centreX - newRadius),
             Point(centreX + newRadius, centreX + newRadius)
-        )
+        ),
+        centre(centreX, centreY),
+        radius(newRadius)
     {
     }
     //    Circle(const Circle& copy) : centre(copy.centre), radius(copy.radius) {}
@@ -256,16 +256,16 @@ class Triangle : public Shape
     }
 
     Triangle(int p1X, int p1Y, int p2X, int p2Y, int p3X, int p3Y) :
-        p1(p1X, p1Y),
-        p2(p2X, p2Y),
-        p3(p3X, p3Y),
         Shape
         (
             Point(minimum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y)),
             Point(minimum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
             Point(maximum(p1X, p2X, p3X), minimum(p1Y, p2Y, p3Y)),
             Point(maximum(p1X, p2X, p3X), maximum(p1Y, p2Y, p3Y))
-        )
+        ),
+        p1(p1X, p1Y),
+        p2(p2X, p2Y),
+        p3(p3X, p3Y)
     {
     }
 
@@ -324,17 +324,17 @@ class Square : public Shape
     // ABCD should be at least a closed quadrilateral, without any of its sides crossing each other.
     // ABDC or other permutations would not work!
     Square(int p1X, int p1Y, int p2X, int p2Y, int p3X, int p3Y, int p4X, int p4Y) :
-        p1(p1X, p1Y),
-        p2(p2X, p2Y),
-        p3(p3X, p3Y),
-        p4(p4X, p4Y),
         Shape
         (
             Point(minimum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y)),
             Point(minimum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
             Point(maximum(p1X, p2X, p3X, p4X), minimum(p1Y, p2Y, p3Y, p4Y)),
             Point(maximum(p1X, p2X, p3X, p4X), maximum(p1Y, p2Y, p3Y, p4Y))
-        )
+        ),
+        p1(p1X, p1Y),
+        p2(p2X, p2Y),
+        p3(p3X, p3Y),
+        p4(p4X, p4Y)
     {
     }
 
